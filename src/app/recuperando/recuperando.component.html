@@ -1,7 +1,8 @@
 <div class="container">
     <div class="box">
      <h1>Recuperação Senha</h1>
-     <input type="email" placeholder="Email Cadastrado">
-     <button>Enviar Código Agora</button>
+     <input type="email" placeholder="Email Cadastrado" id="email">
+     <button (click)="envio()">Enviar Código Agora</button>
+     <p>{{Resposta}}</p>
     </div>
 </div>
