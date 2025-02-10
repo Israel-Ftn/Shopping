@@ -1,12 +1,7 @@
-<nav class="topnav">
-    <div class="menu">
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Contatos</a>
-    </div>
-    <a href="javascrip:void(0)" class="icon">
-     <span class="line"></span>
-     <span class="line"></span>
-     <span class="line"></span>
-    </a>
-</nav>
+<div class="fundo">
+<button mat-button [matMenuTriggerFor]="menu">Shopping</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Contatos</button>
+  <button mat-menu-item>Sobre Nós</button>
+</mat-menu>
+</div>
