@@ -1,60 +1,93 @@
 <app-navbar></app-navbar>
+
+<div class="carteira">
+    <div class="saldo">
+        <span class="spn1" > R$ </span>
+        <span class="spn2">{{saldo}}</span>
+        <div class="transacoes">
+            <button class="botao1" (click)="depositar()">Depositar</button>
+            <button class="botao1" (click)="debitar()">Debitar</button>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="box">
         <div  class="card">
             <img class="cooktop" src="/assets/celular2.webp" alt="">
             <p>Celular Galaxy s23</p>
-            <button>Comprar</button>
+            <span>1.500</span>
+            <hr>
+            <button (click)="comprarProdutos(1500)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/cooktop.webp" alt="">
             <p>Cooktop</p>
-            <button>Comprar</button>
+            <span>570</span>
+            <hr>
+            <button (click)="comprarProdutos(570)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/maquina lavar.webp" alt="">
             <p>Máquina de Lavar</p>
-            <button>Comprar</button>
+            <span>2.585</span>
+            <hr>
+            <button (click)="comprarProdutos(2585)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/panelas.webp" alt="">
             <p>Jogo De Panelas</p>
-            <button>Comprar</button>
+            <span>300</span>
+            <hr>
+            <button (click)="comprarProdutos(300)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/tv.webp" alt="">
             <p>Televisão 58 pol</p>
-            <button>Comprar</button>
+            <span>3.000</span>
+            <hr>
+            <button (click)="comprarProdutos(3000)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/fritadeira eletrica.webp" alt="">
             <p>Fritadeira Elétrica</p>
-            <button>Comprar</button>
+            <span>450,00</span>
+            <hr>
+            <button (click)="comprarProdutos(450)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/maquina lavar.webp" alt="">
             <p>Máquina de Lavar Roupas</p>
-            <button>Comprar</button>
+            <span>2.800</span>
+            <hr>
+            <button (click)="comprarProdutos(2800)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/notabook.webp" alt="">
             <p>Notebook Dell</p>
-            <button>Comprar</button>
+            <span>5.000</span>
+            <hr>
+            <button (click)="comprarProdutos(5000)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/panelas.webp" alt="">
             <p>Jogo de Panelas</p>
-            <button>Comprar</button>
+            <span>250,00</span>
+            <hr>
+            <button (click)="comprarProdutos(250)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/ar condicionado.webp" alt="">
             <p>Ar-Condicionado</p>
-            <button>Comprar</button>
+            <span>2.500</span>
+            <hr>
+            <button (click)="comprarProdutos(2500)">Comprar</button>
         </div>
         <div class="card">
             <img class="cooktop" src="/assets/carrinho bb.webp" alt="">
             <p>Carrinha Bebe (Menina)</p>
-            <button>Comprar</button>
+            <span>300,00</span>
+            <hr>
+            <button (click)="comprarProdutos(300)">Comprar</button>
         </div>
 
     </div>
